@@ -1,0 +1,162 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+#signUpForm {
+    max-width: 600px;
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0px 6px 18px rgb(0 0 0 / 9%);
+    border-radius: 12px;
+}
+#signUpForm .form-header {
+    gap: 5px;
+    text-align: center;
+    font-size: 0.9em;
+}
+#signUpForm .form-header .stepIndicator {
+    position: relative;
+    flex: 1;
+    padding-bottom: 30px;
+}
+#signUpForm .form-header .stepIndicator.active {
+    font-weight: 600;
+}
+#signUpForm .form-header .stepIndicator.finish {
+    font-weight: 600;
+    color: #6B76FF;
+}
+#signUpForm .form-header .stepIndicator::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 9;
+    width: 20px;
+    height: 20px;
+    background-color: #afc7ed;
+    border-radius: 50%;
+    border: 3px solid #ecf5f4;
+}
+#signUpForm .form-header .stepIndicator.active::before {
+    background-color: #6B76FF;
+    border: 3px solid #6B76FF;
+}
+#signUpForm .form-header .stepIndicator.finish::before {
+    background-color: #6B76FF;
+    border: 3px solid #6B76FF;
+}
+#signUpForm .form-header .stepIndicator::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    width: 100%;
+    height: 3px;
+    background-color: #f3f3f3;
+}
+#signUpForm .form-header .stepIndicator.active::after {
+    background-color: #6B76FF;
+}
+#signUpForm .form-header .stepIndicator.finish::after {
+    background-color: #6B76FF;
+}
+#signUpForm .form-header .stepIndicator:last-child:after {
+    display: none;
+}
+#signUpForm input {
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 1em;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+}
+#signUpForm input:focus {
+    border: 1px solid #009688;
+    outline: 0;
+}
+#signUpForm input.invalid {
+    border: 1px solid #ffaba5;
+}
+#signUpForm .step {
+    display: none;
+}
+#signUpForm .form-footer {
+    overflow: auto;
+    gap: 20px;
+}
+#signUpForm .form-footer button {
+    background-color: #6B76FF;
+    border: 1px solid #6B76FF !important;
+    color: #ffffff;
+    border: none;
+    padding: 13px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    flex: 1;
+    margin-top: 30px;
+}
+#signUpForm .form-footer button:hover {
+    opacity: 0.8;
+}
+#signUpForm .form-footer #prevBtn {
+    background-color: #fff;
+    color: #6B76FF;
+}
+
+/* Nasrullah css start */
+.bookme-form-group {
+    margin: 0 0 20px;
+}
+.category label {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.category select {
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 1em;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+}
+.boot-now {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #e6e9ed;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.book-now-btn button {
+    background-color: #6B76FF;
+    color: #fff;
+    border: 1px solid #6B76FF;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.category textarea {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #e3e3e3;
+}
+.category select:focus {
+    border: 1px solid #009688;
+    outline: none;
+}
+.category textarea:focus {
+    outline: none;
+    border: 1px solid #009688;
+}
+
+@media (max-width:767px){
+    #signUpForm {
+        padding: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
