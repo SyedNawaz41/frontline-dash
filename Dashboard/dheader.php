@@ -61,7 +61,7 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="workhistory.php">Work History</a></li>
-                                    <li><a class="dropdown-item" href="#">Education</a></li>
+                                    <li><a class="dropdown-item" href="education.php">Education</a></li>
                                     <li><a class="dropdown-item" href="#">Personal Info</a></li>
                                     <li><a class="dropdown-item" href="#">References</a></li>
                                     <li><a class="dropdown-item" href="#">Checklists</a></li>
@@ -78,3 +78,6 @@
                     </div>
 
                 </div>
+                
+</body>
+</html>               
