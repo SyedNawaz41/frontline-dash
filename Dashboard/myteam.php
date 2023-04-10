@@ -3,7 +3,7 @@
 <div class="col-lg-9 hmdsc2">
     <h1 class="page-title">My team</h1>
 
-   
+   <br>
         <div class="container mt-5">
   <div class="row">
     <div class="col-sm">

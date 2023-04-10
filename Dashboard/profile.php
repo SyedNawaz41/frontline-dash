@@ -614,7 +614,130 @@
             </h2>
             <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
                 <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="headBox p-2">
+                    <div class="box1 empType">
+                        <div class="empTitle">
+                            Employement Type
+                            <div >Select all that apply</div>
+                        </div>
+                        <div class="empCheckBox ">
+                            <div>
+                                <input class="form-check-input" type="checkbox" value="" id="c1">
+                                <label for="c1">Travel</label>
+                            </div>
+                            <div>
+                                <input class="form-check-input" type="checkbox" value="" id="c2">
+                                <label for="c2">Permanent</label>
+                            </div>
+                            <div>
+                                <input class="form-check-input" type="checkbox" value="" id="c3">
+                                <label for="c3">PerDiem</label>
+                            </div>
+                            <div>
+                                <input class="form-check-input" type="checkbox" value="" id="c4">
+                                <label for="c4">Locum Tenens</label>
+                            </div>
+                            <div>
+                                <input class="form-check-input" type="checkbox" value="" id="c5">
+                                <label for="c5">Interim leadership</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box2">
+                    <div class="empTitle">
+                            Shift Type
+                            <div >Select all that apply</div>
+                        </div>
+                        <div class="checkBox empCheckBox">
+                        <div class="checkBoxvalue">
+                            <input class="form-check-input" type="checkbox" value="" id="c5">
+                            <label for="c5">Day</label>
+                        </div>
+                        <div class="checkBoxvalue">
+                            <input class="form-check-input" type="checkbox" value="" id="c5">
+                            <label for="c5">Mid</label>
+                        </div>
+                        <div class="checkBoxvalue">
+                            <input class="form-check-input" type="checkbox" value="" id="c5">
+                            <label for="c5">Night</label>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="box3">
+                        <label for="date">Available Start date:</label>
+                        <input type="date" placeholder="Available Start date" id="date">
+                    </div>
+                    <div class="box4">
+                        <div class="topPlacetitle">
+                            My Top Place to work
+                        </div>
+                        <div class="input">
+                        <Select class="form-control">
+                                        <option value="" selected="">All States</option>
+                                        <option value="alabama">Alabama</option>
+                                        <option value="alaska">Alaska</option>
+                                        <option value="all-states">All States</option>
+                                        <option value="any">Any</option>
+                                        <option value="any-compact-state">Any Compact State</option>
+                                        <option value="arizona">Arizona</option>
+                                        <option value="arkansas">Arkansas</option>
+                                        <option value="california">California</option>
+                                        <option value="colorado">Colorado</option>
+                                        <option value="connecticut">Connecticut</option>
+                                        <option value="delaware">Delaware</option>
+                                        <option value="district-of-columbia">District of Columbia</option>
+                                        <option value="florida">Florida</option>
+                                        <option value="georgia">Georiga</option>
+                                        <option value="hawaii">Hawaii</option>
+                                        <option value="idaho">Idaho</option>
+                                        <option value="illinios">Illinios</option>
+                                        <option value="indiana">Indiana</option>
+                                        <option value="iowa">Iowa</option>
+                                        <option value="kansas">Kansas</option>
+                                        <option value="kentucky">Kentucky</option>
+                                        <option value="louisiana">Louisiana</option>
+                                        <option value="maine">Maine</option>
+                                        <option value="maryland">Maryland</option>
+                                        <option value="massachusetts">Massachusetts</option>
+                                        <option value="michigan">Michigan</option>
+                                        <option value="minnesota">Minnesota</option>
+                                        <option value="mississippi">Mississippi</option>
+                                        <option value="missouri">Missouri</option>
+                                        <option value="montana">Montana</option>
+                                        <option value="nebraska">Nebraska</option>
+                                        <option value="nevada">Nevada</option>
+                                        <option value="new-hampshire">New Hampshire</option>
+                                        <option value="new-jersey">New Jersey</option>
+                                        <option value="new-mexico">New Mexico</option>
+                                        <option value="new-york">New York</option>
+                                        <option value="north-carolina">North Carolina</option>
+                                        <option value="north-dakota">North Dakota</option>
+                                        <option value="ohio">Ohio</option>
+                                        <option value="oklahoma">Oklahoma</option>
+                                        <option value="oregon">Oregon</option>
+                                        <option value="other">Other</option>
+                                        <option value="pennsylvania">Pennsylvania</option>
+                                        <option value="rhode-island">Rhode Island</option>
+                                        <option value="south-carolina">South Carolina</option>
+                                        <option value="south-dakota">South Dakota</option>
+                                        <option value="tennessee">Tennessee</option>
+                                        <option value="texas">Texas</option>
+                                        <option value="unknown">Unknown</option>
+                                        <option value="utah">Utah</option>
+                                        <option value="vermont">Vermont</option>
+                                        <option value="virginia">Virginia</option>
+                                        <option value="washington">Washington</option>
+                                        <option value="west-virginia">West Virginia</option>
+                                        <option value="wisconsin">Wisconsin</option>
+                                        <option value="wyoming">Wyoming</option>
+                                    </Select>
+                        </div>
+                        <div class="alertTypeBox">
+                        Want more licenses? Aya can help! Talk to your recruiter for more info.
+                        </div>
+                    </div>
+                    <div><a href="" style="text-decoration: underline!important;">Next Step</a></div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -626,15 +749,135 @@
             </h2>
             <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
                 <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="head">
+                  <div class="title5 ">
+                  Aya collects and uses this info consistent with its Privacy Policy
+                  </div>
+                  <div class='legal'>
+                    Legal Name
+                  </div>
+                  <div class="dateOfBirth">
+                        <div class="titleDate">
+                            Date Of birth<span>*</span>
+                        </div>
+                        <!-- end of title -->
+                        <div class="allInput">
+
+                            <div class="inputDate">
+                               <select name="" id="" class="form-control">
+                                <option value="" selected="">Month</option>
+                                <option value=""></option>
+                               </select>
+                        </div>
+                        <div class="inputDate">
+                            <select name="" id="" class="form-control">
+                                <option value="" selected="">Day</option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="inputDate">
+                           <select name="" id="" class="form-control">
+                            <option value="" selected="">Year</option>
+                            <option value=""></option>
+                           </select>
+                        </div>
+                        <div class="inputDate">
+                         <input type="text" placeholder="ssn*">
+                        </div>
+                    </div>
+                  </div>
+                  <!-- End of Date of birth -->
+                    <div class="questions">
+                        <!-- Question Start -->
+                        <div class="question mb-4 p-2">
+                        <p>
+                        Will you now, or in the future for continued employment with Employer, require Employer to sponsor you for U.S. employment authorization, work visa/status, employer-based immigration benefit(s), such as an H-1B, E-3, TN, PERM, I-140, I-485 Supplement J, “green card”, etc.?<span style="color:red; background-color:transparent;">*</span>
+                        </p>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        Yes
+                        </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        No
+                        </label>
+                        </div>
+                        </div>
+                    <!-- Question 1 total 4 with condition based-->
+                        <!-- Question Start -->
+                        <div class="question mb-4 p-2">
+                        <p>
+                        Are you eligible for TN visa classification?<span style="color:red; background-color:transparent;">*</span>
+                        </p>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        Yes
+                        </label>
+                        </div>
+                        <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        No
+                        </label>
+                        </div>
+                        </div>
+                    <!-- Question 2 total 4 with condition based-->
+                        <!-- Question Start -->
+                        <div class="question mb-4 p-2">
+                        <p>
+                        Are you fully vaccinated against COVID-19 as defined by the CDC?<span style="color:red; background-color:transparent;">*</span>                        </p>
+                        <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        Yes
+                        </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        No
+                        </label>
+                        </div>
+                        </div>
+                    <!-- Question 3 end-->
+                        <div class="question p-2">
+                        <p>
+                        Some facilities or state and local laws will require that you have received the COVID-19 booster to work at the facility. Have you received the COVID-19 booster?<span style="color:red; background-color:transparent;">*</span>                       </p>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        Yes
+                        </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        No
+                        </label>
+                        </div>
+                        </div>
+                    <!-- Question 4 end-->
+                    </div>
+                    <!-- questions end -->
+                    <p class="pz-sec flex-column justify-content-lg-start warn p-2 ">
+                    Unvaccinated persons may request medical or religious exemptions from the COVID-19 vaccine requirements, and these requests will be considered on a case-by-case basis in accordance with applicable law and the facility’s vaccine policies.
+                    <a href="#" class="w-25 mt-2">Save and Continue</a>
+                    </p>
+                  </div>
                 </div>
             </div>
         </div>
 </div>
 </form>
-<div class="dfooter-sec">
-    <p>© 2023 FLH Staffing</p>
-    <a href="#">Terms of Use</a> <a href="#">Privacy Policy</a> <a href="#">Arbitration Agreement </a>
+<div class="dfooter-sec w-100">
+    <div class='w-50 mx-auto' style="padding-left:20px">
+        <p>&copy; 2023 FLH Staffing</p>
+        <a href="#">Terms of Use</a> <a href="#">Privacy Policy</a> <a href="#">Arbitration Agreement </a>
+    </div>
 </div>
 </div>
 </div>
