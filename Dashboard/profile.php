@@ -1,22 +1,10 @@
 <?php include 'dheader.php'; ?>
+
 <div class="col-lg-9 hmdsc2">
+<?php include 'modal.php'; ?>
     <h1 class="page-title">Profile</h1>
-    <div class="pt-box2 prof-box">
-        <h4><strong>Application Progress: </strong> Getting Started</h4>
-        <ul class="pg-sec">
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Work History</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Professional Info</a></li>
-            <li><a href="#">References</a></li>
-            <li><a href="#">Checklists</a></li>
-        </ul>
-        <i class="fa fa-star"></i>
-        <div class="pz-sec">
-            <p>Your personal information is needed for many reasons — from facilities contacting you for interviews to fun things like gifts from Aya! Plus, we use your job preferences to find positions with shifts and locations that fit your lifestyle.</p>
-            <a href="#">SKIP TO NEXT SECTION</a>
-        </div>
-    </div>
+    <?php include 'applicationprogress.php'; ?>
+    
     <form action="" class="prof-form-sec">
         <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
@@ -736,7 +724,7 @@
                         Want more licenses? Aya can help! Talk to your recruiter for more info.
                         </div>
                     </div>
-                    <div><a href="" style="text-decoration: underline!important;">Next Step</a></div>
+                 
                   </div>
                 </div>
             </div>

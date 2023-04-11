@@ -5,9 +5,10 @@
 
    
         <div class="container mt-5">
+        <?php include 'modal.php'; ?>
         <div class="row">
     <div  class="col-sm">
-      <div class="pt-box3 hmdsc16">
+      <div class="pt-box6 hmdsc16">
         <div class="card-body">
         <div class="form-check form-switch float-end">
             <input class="form-check-input" type="checkbox" id="switch1">
@@ -36,7 +37,7 @@
     </div>
 
     <div  class="col-sm">
-      <div class="pt-box3 hmdsc16">
+      <div class="pt-box6 hmdsc16">
         <div class="card-body">
         <div class="form-check form-switch float-end">
             <input class="form-check-input" type="checkbox" id="switch4">

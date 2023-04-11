@@ -1,26 +1,13 @@
 <?php include 'dheader.php'; ?>
-<div class="col-lg-9 hmdsc2 ">
-    <h1 class="page-title ">Work History</h1>
-    <div class="pt-box2 prof-box " style="margin-bottom: 33px;"><div>
-        <h4><strong>Application Progress: </strong> Getting Started</h4>
-        <ul class="pg-sec">
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Work History</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Professional Info</a></li>
-            <li><a href="#">References</a></li>
-            <li><a href="#">Checklists</a></li>
-        </ul>
-        <i class="fa fa-star"></i>
-        <div class="pz-sec">
-            <p>Your personal information is needed for many reasons — from facilities contacting you for interviews to fun things like gifts from Aya! Plus, we use your job preferences to find positions with shifts and locations that fit your lifestyle.</p>
-            <a href="#">SKIP TO NEXT SECTION</a>
-            </div>
-        </div>
-        <div class="d-flex pz-sec justify-content-end pt-5 p-2 ">
-            <div class="w-25 justify-content-end">
-                <!-- <a href="#" id='addWork'>+ Add Work History</a> -->
-                <a class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >Add work History</a>
+ 
+<div class="col-lg-9 hmdsc2 "> 
+<?php include 'modal.php'; ?>   
+<h1 class="page-title ">Work History</h1>
+<?php include 'applicationprogress.php'; ?>
+<!-- Head Section end -->
+<div class="d-flex pz-sec justify-content-end pt-5 p-2 ">
+            <div class=" justify-content-end">
+                <a id='addWork' data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa fa-plus"></i> Add Work History</a>
 
          <div class="offcanvas offcanvas-end"  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
          <div class="offcanvas-header" >
@@ -347,7 +334,7 @@
                 </div>
                 <!-- End of refrences -->
                 <div class="d-flex gap-3 mediaquery" style="position:sticky; bottom:0; border-top:2px solid rgba(0,0,0,0.4); background-color:#ffffff; height:55px; padding:5px 20px; ">
-                    <button style="border-radius:20px; background-color:#47d0e6; border:none; outline:none;">Add Work History</button>
+                    <button style="border-radius:20px; background-color:#47d0e6; border:none; outline:none; width:155px">Add Work History</button>
                     <a href="" style="width:30%; background-color:transparent; text-decoration:underline !important; font-size:13px;">Cancel</a>
                 </div>
            </div>
@@ -355,27 +342,26 @@
         <!-- body End -->
             </div>
             </div>
-        <div class="d-flex flex align-content-center justify-content-center pt-5 overflow-y-cs" >
-       <img src="../Assets/Images/workhistory.jpg" alt="workhistory" class="">
+        <div class="d-flex flex align-content-center justify-content-center pt-2 overflow-y-cs" >
+       <img src="../Assets/Images/workhistory.jpg" alt="workhistory">
     </div>
-    <div class="d-flex flex-column centerAll mb-4">
+   <center><div class="d-flex flex-column centerAll mb-4">
    <div> Nothing has been added yet!</div>
 <div> Click "Add Work History" in the top right to get started.</div>
-    </div>
-      </div>
+    </div> </center>
 
-      <div class="dfooter-sec w-100">
+    <!-- Footer -->
+    <div class="dfooter-sec w-100">
           <div class='w-50' style="padding-left:20px">
               <p>&copy; 2023 FLH Staffing</p>
               <a href="#">Terms of Use</a> <a href="#">Privacy Policy</a> <a href="#">Arbitration Agreement </a>
           </div>
-      <!-- <script>
-          let nav = document.getElementById('nav');
-          let btnNav = document.getElementById('btnNav');
-       document.getElementById('addWork').addEventListener('click',(e)=>{
-            if(nav.classList.contains('d-none')){
-                console.log(true)
-                console.log(btnNav)
-            }
-        })
-      </script> -->
+</div>
+<script>
+    // myBorder
+    function setBorder(){
+        console.log("hello");
+        let myBorder = document.getElementById('myBorder');
+        myBorder.style.setProperty('--myBorder','blue');
+    }
+</script>

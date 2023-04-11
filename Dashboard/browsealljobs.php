@@ -1,5 +1,6 @@
 <?php include 'dheader.php'; ?>
 <div class="col-lg-9 hmdsc2">
+<?php include 'modal.php'; ?>
         <h1 class="page-title">Browse All Jobs</h1>
         <!-- Filter Section start -->
         <div class="filterSection p-2 container ">
@@ -7,7 +8,7 @@
             <p style="color:rgba(0,0,0,0.5)!important; font-size:14px; font-wight:500;">Filters</p>
             <select class="form-select form-select-lg mb-3 " aria-label=".form-select-lg example">
                 <option selected>Open this select menu</option>
-                <option value=""> filter </option>
+                <option value="">filter</option>
             </select>
             </div>
         </div>

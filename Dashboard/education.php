@@ -1,22 +1,7 @@
 <?php include 'dheader.php'; ?>
 <div class="col-lg-9 hmdsc2">
     <h1 class="page-title">Education</h1>
-    <div class="pt-box2 prof-box">
-        <h4><strong>Application Progress: </strong> Getting Started</h4>
-        <ul class="pg-sec">
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Work History</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Professional Info</a></li>
-            <li><a href="#">References</a></li>
-            <li><a href="#">Checklists</a></li>
-        </ul>
-        <i class="fa fa-star"></i>
-        <div class="pz-sec">
-            <p>Your personal information is needed for many reasons — from facilities contacting you for interviews to fun things like gifts from Aya! Plus, we use your job preferences to find positions with shifts and locations that fit your lifestyle.</p>
-            <a href="#">SKIP TO NEXT SECTION</a>
-            </div>
-        </div>
+ <?php include 'applicationprogress.php'; ?>
         
         <div class="container mt-5">
             <p>Please list any degrees you have completed or will complete.</p>

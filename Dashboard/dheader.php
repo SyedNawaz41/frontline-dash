@@ -59,22 +59,25 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa fa-list-alt"></i> Job Application
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="workhistory.php">Work History</a></li>
-                                    <li><a class="dropdown-item" href="education.php">Education</a></li>
-                                    <li><a class="dropdown-item" href="personalinfo.php">Personal Info</a></li>
-                                    <li><a class="dropdown-item" href="refrences.php">References</a></li>
-                                    <li><a class="dropdown-item" href="checklist.php">Checklists</a></li>
-                                    <li><a class="dropdown-item" href="acknowledge.php">Acknowledgements</a></li>
-                                    <li><a class="dropdown-item" href="onboarding.php">Onboarding</a></li>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                                    <li><a class="dropdown-item" href="./workhistory.php">Work History</a></li>
+                                    <li><a class="dropdown-item" href="./education.php">Education</a></li>
+                                    <li><a class="dropdown-item" href="./personalinfo.php">Personal Info</a></li>
+                                    <li><a class="dropdown-item" href="./refrences.php">References</a></li>
+                                    <li><a class="dropdown-item" href="./checklist.php">Checklists</a></li>
+                                    <li><a class="dropdown-item" href="./acknowledge.php">Acknowledgements</a></li>
+                                    <li><a class="dropdown-item" href="./onboarding.php">Onboarding</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a href="document-assignments.php" class="nav-link"><i class="fa fa-folder"></i> Documents & Tasks</a></li>
-                            <li class="nav-item"><a href="myteam.php" class="nav-link"><i class="fa fa-users"></i> My Teams</a></li>
-                            <li class="nav-item"><a href="preferences.php" class="nav-link"><i class="fa fa-envelope"></i> Emails & Alerts</a></li>
+                            <li class="nav-item"><a href="./documentandtasks.php" class="nav-link"><i class="fa fa-folder"></i> Documents & Tasks</a></li>
+                            <li class="nav-item"><a href="./myteam.php" class="nav-link"><i class="fa fa-users"></i> My Teams</a></li>
+                            <li class="nav-item"><a href="./preferences.php" class="nav-link"><i class="fa fa-envelope"></i> Emails & Alerts</a></li>
                             <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-sign-out"></i> Log Out</a></li>
                         </ul>
-                        <a class="rec-btn" href="#">Recommend My Recruiter</a>
+                        <a type="button" class="rec-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Recommend My Recruiter
+                        </a>
+                        <!-- Modal -->
                     </div>
 
                 </div>

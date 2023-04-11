@@ -12,34 +12,33 @@ input,select{
     background-color:#47d0e6 !important;
     border:none;
     padding:5px;
+
 }
 label{
-    font-size:10px;
+    font-size:14px;
+    cursor:pointer !important;
 }
 input[type~="checkbox"]{
     width:10px;
+    cursor:pointer !important;
 }
+.span{
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #003b68;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 500;
+    margin-right: 15px;
+    }
 </Style>
 <div class="col-lg-9 hmdsc2 ">
+<?php include 'modal.php'; ?>
 <h1 class="page-title ">Personal Info</h1>
-<div class="pt-box2 prof-box " style="margin-bottom: 33px;">
-    <h4><strong>Application Progress: </strong> Getting Started</h4>
-    <ul class="pg-sec">
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Work History</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Professional Info</a></li>
-            <li><a href="#">References</a></li>
-            <li><a href="#">Checklists</a></li>
-        </ul>
-        <i class="fa fa-star"></i>
-        <div class="pz-sec">
-            <p>Your personal information is needed for many reasons — from facilities contacting you for interviews to fun things like gifts from Aya! Plus, we use your job preferences to find positions with shifts and locations that fit your lifestyle.</p>
-            <a href="#">SKIP TO NEXT SECTION</a>
-        </div>
-        <div>
-    </div>
-</div>
+<?php include 'applicationprogress.php'; ?>
+
     <!-- Head Section end -->
     <!-- Accordian Start -->
 <div class=" mt-5 p-5">
@@ -48,7 +47,7 @@ input[type~="checkbox"]{
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-        Licenses
+      <span class="span">1</span>Licenses
       </button>
     </h2>
     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
@@ -60,7 +59,7 @@ input[type~="checkbox"]{
             <div class="innerRow d-flex flex-column flex-lg-row gap-3 align-content-center ">
                 <!-- Select start -->
             <select name="" id="" class="select">
-            <option selected="" disabled >Licensure State*</option>
+            <option selected="" disabled >state</option>
             <option>Alabama</option>
             <option> American Samoa</option>
             <option> Alaska</option>
@@ -133,7 +132,9 @@ input[type~="checkbox"]{
             </div>
             <!-- Button End -->
             <!-- start of next step -->
-            <a href="#" style="text-decoration:underline !important;">Next Step</a>
+            <a class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="text-decoration:underline !important;" id="colOne">
+            Next Step
+            </a>
             <!-- end of next step -->
         </div>
         <!-- div of container ended -->
@@ -147,7 +148,7 @@ input[type~="checkbox"]{
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-        Certification
+           <span class="span">2</span> Certification
       </button>
     </h2>
     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
@@ -229,7 +230,9 @@ input[type~="checkbox"]{
                 </div>
                 <!-- for button end -->
                   <!-- start of next step -->
-                <a href="#" style="text-decoration:underline !important;">Next Step</a>
+                  <a class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="text-decoration:underline !important;">
+                    Next Step
+                </a>
                 <!-- end of next step -->
             </div>
             <!-- container end end -->
@@ -242,7 +245,7 @@ input[type~="checkbox"]{
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-        Addition Info
+        <span class="span">3</span>Addition Info
       </button>
     </h2>
     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
@@ -256,7 +259,9 @@ input[type~="checkbox"]{
                         <label for="floatingTextarea">What are some details you would like us to share with facilities that make you an extra special candidate?</label>
                     </div>
                     <!-- Text area end -->
-                    <a href="#" style="text-decoration:underline !important;">Next Step</a>
+                    <a class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-decoration:underline !important;" id="colTwo">
+                    Next Step
+                    </a>
                 </div>   
             <!-- container end -->
             </div>
@@ -269,24 +274,24 @@ input[type~="checkbox"]{
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-      Charting System
+      <span class="span">4</span>Charting System
       </button>
     </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
         <!-- Accordian body Start -->
         <div class="accordion-body">
             <!-- container start -->
             <div class="d-flex p-2 gap-0 gap-lg-4 flex-column flex-lg-row">
                 <!-- left side start-->
-                <div class='d-flex flex-column w-25 fx' style="font-size:12px ">
+                <div class='d-flex flex-column w-25 fx' style="font-size:13.5px ">
                     Do you Have experience with any of these EMR/EHR systems?
-                    <p style="font-size:10px; color:rgba(0,0,0,0.6);">
+                    <p style="font-size:11.6667px; color:rgba(0,0,0,0.87);">
                         Select all that apply
                     </p>
                 </div>
                 <!-- left side end-->
                 <!-- Right side Start -->
-                <div class="d-flex gap-0 flex-column gap-lg-4 flex-lg-row " style="font-size:12px">
+                <div class="d-flex gap-0 flex-column gap-lg-4 flex-lg-row " style="font-size:14px">
                 <!-- inner flex column start -->
                 <div class="d-flex flex-column ">
                     <!-- 1 -->
@@ -350,7 +355,7 @@ input[type~="checkbox"]{
                 </div>
                 <div class="form-floating">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea" style="font-size:10px; word-wrap:wrap;">other(please Lists) </label>
+                <label for="floatingTextarea" style="font-size:12px; word-wrap:wrap;">other(please Lists) </label>
                 </div>
                 </div>
                 <!-- For right side inner flex column end -->
@@ -358,7 +363,9 @@ input[type~="checkbox"]{
             <!-- Right side End -->
         </div>
         <!-- container End -->
-        <a href="#" style="text-decoration:underline !important;">Next Step</a>
+        <a class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-decoration:underline !important;" id="colThree" >
+        Next Step
+      </a>
     </div>
         <!-- Accordian body End -->
     </div>
@@ -368,7 +375,7 @@ input[type~="checkbox"]{
     <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Background
+        <span class="span">5</span>Background
       </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -377,32 +384,32 @@ input[type~="checkbox"]{
             <!-- container Start -->
             <div class="d-flex gap-0 gap-lg-4 flex-column">
                 <!-- Container inner start -->
-                <div class="d-flex gap-0 gap-lg-2" style="font-size:12px; font-weight:bold;">
+                <div class="d-flex gap-0 gap-lg-2" style="font-size:14px; font-weight:500;">
                     <p class="w-50">Have you ever been named as a defendant in a professional liability action?</p>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefaultf" id="flexRadioDefault1">
                         <label class="form-check-label" for="flexRadioDefault1">
                             Yes
                         </label>
                         </div>
                         <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <input class="form-check-input" type="radio" name="flexRadioDefaultf" id="flexRadioDefault2" checked>
                         <label class="form-check-label" for="flexRadioDefault2">
                             No
                         </label>
                         </div>
                 </div>
                     
-                <div class="d-flex gap-0 gap-lg-2" style="font-size:12px;font-weight:bold;">
+                <div class="d-flex gap-0 gap-lg-2" style="font-size:14px;font-weight:500;">
                     <p class="w-50">Has action ever been taken against your professional license?</p>
                     <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaulta" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
                      Yes
                     </label>
                     </div>
                     <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <input class="form-check-input" type="radio" name="flexRadioDefaulta" id="flexRadioDefault2" checked>
                     <label class="form-check-label" for="flexRadioDefault2">
                      No
                     </label>
@@ -428,3 +435,33 @@ input[type~="checkbox"]{
 </div>
 <!-- footer end -->
 </div>
+<script>
+    // let c4a =document.getElementById('collapseTwo')
+    // let c4b =document.getElementById('colThree')
+    // let c3a =document.getElementById('panelsStayOpen-collapseThree')
+    // let c3b =document.getElementById('colTwo')
+    // c4b.addEventListener('click',()=>{
+    //     if(!c4a.classList.contains('show')){
+    //         if(c4a.classList.contains('hide')){
+    //             c4a.classList.remove('hide')
+    //         }
+    //         c4a.classList.add('show')
+    //     }else{
+    //         c4a.classList.remove('show')
+    //         c4a.classList.add('hide')
+    //     }
+    // })
+    // c3b.addEventListener('click',()=>{
+    //     if(!c3a.classList.contains('show')){
+    //         if(c3a.classList.contains('hide')){
+    //             c3a.classList.remove('hide')
+    //         }
+    //         c3a.classList.add('show')
+    //     }else{
+    //         c3a.classList.remove('show')
+    //         c3a.classList.add('hide')
+    //     }
+    // })
+ 
+console.log(window.location.pathname);
+</script>

@@ -1,5 +1,6 @@
 <?php include'dheader.php'; ?>
                 <div class="col-lg-9 hmdsc2">
+                <?php include 'modal.php'; ?>
                     <h1 class="page-title">My job search</h1>
                     <div class="pt-box2 mjs-box">
                         <h5>Recommended by Your Recruiter (0)</h5>

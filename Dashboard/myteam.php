@@ -1,12 +1,13 @@
 <?php include 'dheader.php'; ?>
 
 <div class="col-lg-9 hmdsc2">
+<?php include 'modal.php'; ?>
     <h1 class="page-title">My team</h1>
 
-   <br>
+   
         <div class="container mt-5">
   <div class="row">
-    <div class="col-sm">
+    <div class="col-sm"><br>
      <h5 class="text-start">My team</h5>
     <div class="pt-box3 hmdsc16">
     <b>Samuel Vergara</b>
